@@ -1,4 +1,5 @@
 
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
@@ -26,9 +27,11 @@ const Hero = () => {
           </p>
           <div className="flex flex-wrap gap-4">
             <Button className="btn-primary" size="lg">Order Online</Button>
-            <Button className="bg-white text-verandah-brown hover:bg-verandah-cream" size="lg">
-              Explore Our Menu
-            </Button>
+            <Link to="/menu">
+              <Button className="bg-white text-verandah-brown hover:bg-verandah-cream" size="lg">
+                Explore Our Menu
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
