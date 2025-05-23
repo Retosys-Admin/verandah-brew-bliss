@@ -26,7 +26,9 @@ const Hero = () => {
             Vijayawada's premier specialty coffee destination, where every cup tells a story of passion, craftsmanship, and community.
           </p>
           <div className="flex flex-wrap gap-4">
-            <Button className="btn-primary" size="lg">Order Online</Button>
+            <Link to="/order">
+              <Button className="btn-primary" size="lg">Order Online</Button>
+            </Link>
             <Link to="/menu">
               <Button className="bg-white text-verandah-brown hover:bg-verandah-cream" size="lg">
                 Explore Our Menu

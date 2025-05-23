@@ -30,7 +30,7 @@ const Navbar = () => {
   return (
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white shadow-md py-3" : "bg-transparent py-5"
+        isScrolled ? "bg-white shadow-lg py-3" : "bg-white/95 backdrop-blur-sm py-5 shadow-sm"
       }`}
     >
       <div className="container-custom flex items-center justify-between">
@@ -41,6 +41,14 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
+          <Link 
+            to="/" 
+            className={`font-montserrat font-medium transition-colors ${
+              isActive('/') ? 'text-verandah-terracotta' : 'text-verandah-brown hover:text-verandah-terracotta'
+            }`}
+          >
+            Home
+          </Link>
           <Link 
             to="/about" 
             className={`font-montserrat font-medium transition-colors ${
@@ -85,8 +93,12 @@ const Navbar = () => {
 
         {/* CTA Buttons */}
         <div className="hidden md:flex items-center space-x-4">
-          <Button className="btn-secondary" variant="outline">Reserve a Table</Button>
-          <Button className="btn-primary">Order Online</Button>
+          <Link to="/reserve">
+            <Button className="btn-secondary" variant="outline">Reserve a Table</Button>
+          </Link>
+          <Link to="/order">
+            <Button className="btn-primary">Order Online</Button>
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -102,6 +114,15 @@ const Navbar = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-white shadow-lg border-t">
           <div className="container-custom py-4 flex flex-col space-y-4">
+            <Link 
+              to="/" 
+              className={`py-2 font-montserrat font-medium ${
+                isActive('/') ? 'text-verandah-terracotta' : 'text-verandah-brown'
+              }`}
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Home
+            </Link>
             <Link 
               to="/about" 
               className={`py-2 font-montserrat font-medium ${
@@ -148,8 +169,12 @@ const Navbar = () => {
               Contact
             </Link>
             <div className="flex flex-col space-y-2 pt-2">
-              <Button className="w-full btn-secondary" variant="outline">Reserve a Table</Button>
-              <Button className="w-full btn-primary">Order Online</Button>
+              <Link to="/reserve">
+                <Button className="w-full btn-secondary" variant="outline">Reserve a Table</Button>
+              </Link>
+              <Link to="/order">
+                <Button className="w-full btn-primary">Order Online</Button>
+              </Link>
             </div>
           </div>
         </div>

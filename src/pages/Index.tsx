@@ -7,6 +7,9 @@ import MenuPreview from "@/components/MenuPreview";
 import Location from "@/components/Location";
 import Newsletter from "@/components/Newsletter";
 import Footer from "@/components/Footer";
+import FeaturesSection from "@/components/FeaturesSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
+import StatsSection from "@/components/StatsSection";
 
 const Index = () => {
   return (
@@ -19,8 +22,11 @@ const Index = () => {
 
       <Navbar />
       <Hero />
+      <FeaturesSection />
       <About />
+      <StatsSection />
       <MenuPreview />
+      <TestimonialsSection />
       <Location />
       <Newsletter />
       <Footer />
