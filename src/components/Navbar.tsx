@@ -40,13 +40,13 @@ const Navbar = () => {
         <Link to="/" className="flex items-center group">
           <div className="relative">
             <img 
-              src="/lovable-uploads/a41b404b-8d7d-4a36-84ce-6aaa113ae89f.png" 
+              src="/lovable-uploads/19e568c4-0b65-466c-93b5-b8e1eca14cec.png" 
               alt="Verandah Coffee Roasters & Café" 
-              className={`transition-all duration-300 group-hover:scale-105 ${
-                isScrolled ? "h-12 w-auto" : "h-16 w-auto"
+              className={`transition-all duration-300 group-hover:scale-105 object-contain ${
+                isScrolled ? "h-14 w-auto" : "h-20 w-auto"
               }`}
+              style={{ filter: 'drop-shadow(0 2px 8px rgba(0,0,0,0.1))' }}
             />
-            <div className="absolute -top-1 -right-1 w-3 h-3 bg-verandah-terracotta rounded-full opacity-75 animate-pulse"></div>
           </div>
         </Link>
 

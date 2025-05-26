@@ -12,9 +12,10 @@ const Footer = () => {
           <div>
             <div className="mb-6">
               <img 
-                src="/lovable-uploads/a41b404b-8d7d-4a36-84ce-6aaa113ae89f.png" 
+                src="/lovable-uploads/19e568c4-0b65-466c-93b5-b8e1eca14cec.png" 
                 alt="Verandah Coffee Roasters & Café" 
-                className="h-20 w-auto mb-4"
+                className="h-20 w-auto object-contain mb-4 hover:scale-105 transition-transform duration-300"
+                style={{ filter: 'drop-shadow(0 2px 8px rgba(255,255,255,0.1))' }}
               />
             </div>
             <p className="text-verandah-cream/80 mb-6">
