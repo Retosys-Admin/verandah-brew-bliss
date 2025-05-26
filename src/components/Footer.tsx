@@ -1,4 +1,3 @@
-
 import { Instagram, Facebook, Twitter } from "lucide-react";
 
 const Footer = () => {
@@ -12,9 +11,9 @@ const Footer = () => {
           <div>
             <div className="mb-6">
               <img 
-                src="/lovable-uploads/19e568c4-0b65-466c-93b5-b8e1eca14cec.png" 
+                src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?q=80&w=400&h=400&fit=crop&crop=center" 
                 alt="Verandah Coffee Roasters & Café" 
-                className="h-20 w-auto object-contain mb-4 hover:scale-105 transition-transform duration-300"
+                className="h-20 w-20 object-contain mb-4 hover:scale-105 transition-transform duration-300 rounded-lg"
                 style={{ filter: 'drop-shadow(0 2px 8px rgba(255,255,255,0.1))' }}
               />
             </div>
