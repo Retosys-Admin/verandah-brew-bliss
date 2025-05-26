@@ -10,7 +10,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Column 1: Logo & About */}
           <div>
-            <h3 className="text-2xl font-bold font-montserrat mb-6">VERANDAH</h3>
+            <div className="mb-6">
+              <img 
+                src="/lovable-uploads/a41b404b-8d7d-4a36-84ce-6aaa113ae89f.png" 
+                alt="Verandah Coffee Roasters & Café" 
+                className="h-20 w-auto mb-4"
+              />
+            </div>
             <p className="text-verandah-cream/80 mb-6">
               Vijayawada's premier specialty coffee destination, serving quality brews in a cozy atmosphere.
             </p>
@@ -52,7 +58,6 @@ const Footer = () => {
             </ul>
           </div>
           
-          {/* Column 3: Hours */}
           <div>
             <h3 className="text-xl font-bold font-montserrat mb-6">Hours</h3>
             <ul className="space-y-3">
@@ -71,7 +76,6 @@ const Footer = () => {
             </ul>
           </div>
           
-          {/* Column 4: Contact */}
           <div>
             <h3 className="text-xl font-bold font-montserrat mb-6">Contact</h3>
             <ul className="space-y-3">

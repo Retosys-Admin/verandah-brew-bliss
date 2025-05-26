@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, Coffee } from "lucide-react";
+import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
@@ -31,33 +31,22 @@ const Navbar = () => {
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled 
-          ? "bg-white/95 backdrop-blur-lg shadow-xl border-b border-verandah-cream py-3" 
-          : "bg-gradient-to-b from-black/40 to-transparent py-6"
+          ? "bg-white/95 backdrop-blur-lg shadow-xl border-b border-verandah-cream py-2" 
+          : "bg-gradient-to-b from-black/40 to-transparent py-4"
       }`}
     >
       <div className="container-custom flex items-center justify-between">
         {/* Logo */}
-        <Link to="/" className="flex items-center space-x-3 group">
+        <Link to="/" className="flex items-center group">
           <div className="relative">
-            <Coffee 
-              size={32} 
-              className={`transition-all duration-300 ${
-                isScrolled ? "text-verandah-terracotta" : "text-white"
-              } group-hover:rotate-12`} 
+            <img 
+              src="/lovable-uploads/a41b404b-8d7d-4a36-84ce-6aaa113ae89f.png" 
+              alt="Verandah Coffee Roasters & Café" 
+              className={`transition-all duration-300 group-hover:scale-105 ${
+                isScrolled ? "h-12 w-auto" : "h-16 w-auto"
+              }`}
             />
             <div className="absolute -top-1 -right-1 w-3 h-3 bg-verandah-terracotta rounded-full opacity-75 animate-pulse"></div>
-          </div>
-          <div className="flex flex-col">
-            <span className={`text-2xl font-bold font-montserrat tracking-tight transition-colors duration-300 ${
-              isScrolled ? "text-verandah-brown" : "text-white"
-            }`}>
-              VERANDAH
-            </span>
-            <span className={`text-xs font-light tracking-widest transition-colors duration-300 ${
-              isScrolled ? "text-verandah-sage" : "text-verandah-cream/80"
-            }`}>
-              COFFEE ROASTERS
-            </span>
           </div>
         </Link>
 

@@ -1,5 +1,6 @@
 
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -57,6 +58,13 @@ const Shop = () => {
         </div>
         
         <div className="container-custom relative z-10">
+          <div className="flex items-center space-x-6 mb-6">
+            <img 
+              src="/lovable-uploads/a41b404b-8d7d-4a36-84ce-6aaa113ae89f.png" 
+              alt="Verandah Coffee Roasters & Café" 
+              className="h-16 w-auto"
+            />
+          </div>
           <h1 className="text-white text-4xl md:text-5xl font-bold mb-4 animate-fade-in">
             Coffee Shop
           </h1>
@@ -90,9 +98,11 @@ const Shop = () => {
                     <span className="text-verandah-terracotta font-bold text-lg">
                       {product.price}
                     </span>
-                    <Button className="btn-primary" size="sm">
-                      Add to Cart
-                    </Button>
+                    <Link to="/order">
+                      <Button className="btn-primary" size="sm">
+                        Add to Cart
+                      </Button>
+                    </Link>
                   </div>
                 </div>
               </div>
