@@ -153,9 +153,11 @@ const OrderOnline = () => {
                         <div className="flex justify-between items-center text-lg font-bold text-verandah-brown">
                           <span>Total: ₹{getTotalPrice()}</span>
                         </div>
-                        <Button className="w-full mt-4 btn-primary">
-                          Proceed to Checkout
-                        </Button>
+                        <a href="/checkout">
+                          <Button className="w-full mt-4 btn-primary">
+                            Proceed to Checkout
+                          </Button>
+                        </a>
                       </div>
                     </>
                   )}

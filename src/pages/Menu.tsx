@@ -1,7 +1,7 @@
 
 import { Helmet } from "react-helmet";
 import Navbar from "@/components/Navbar";
-import MenuPreview from "@/components/MenuPreview";
+import LuxuryMenuPreview from "@/components/LuxuryMenuPreview";
 import Footer from "@/components/Footer";
 
 const Menu = () => {
@@ -27,15 +27,15 @@ const Menu = () => {
         
         <div className="container-custom relative z-10">
           <h1 className="text-white text-4xl md:text-5xl font-bold mb-4 animate-fade-in">
-            Our Menu
+            Our Artisan Menu
           </h1>
           <p className="text-verandah-cream text-lg max-w-2xl">
-            Handcrafted beverages and delicious treats made with love
+            Handcrafted beverages and delicious treats made with love and the finest ingredients
           </p>
         </div>
       </section>
 
-      <MenuPreview />
+      <LuxuryMenuPreview />
       <Footer />
     </>
   );

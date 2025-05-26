@@ -3,13 +3,15 @@ import { Helmet } from "react-helmet";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
-import MenuPreview from "@/components/MenuPreview";
+import LuxuryMenuPreview from "@/components/LuxuryMenuPreview";
 import Location from "@/components/Location";
 import Newsletter from "@/components/Newsletter";
 import Footer from "@/components/Footer";
 import FeaturesSection from "@/components/FeaturesSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import StatsSection from "@/components/StatsSection";
+import ExperienceSection from "@/components/ExperienceSection";
+import CraftmanshipSection from "@/components/CraftmanshipSection";
 
 const Index = () => {
   return (
@@ -23,9 +25,11 @@ const Index = () => {
       <Navbar />
       <Hero />
       <FeaturesSection />
+      <ExperienceSection />
       <About />
+      <CraftmanshipSection />
       <StatsSection />
-      <MenuPreview />
+      <LuxuryMenuPreview />
       <TestimonialsSection />
       <Location />
       <Newsletter />

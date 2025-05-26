@@ -2,6 +2,7 @@
 import { Helmet } from "react-helmet";
 import Navbar from "@/components/Navbar";
 import AboutSection from "@/components/About";
+import TeamSection from "@/components/TeamSection";
 import Footer from "@/components/Footer";
 
 const About = () => {
@@ -36,6 +37,7 @@ const About = () => {
       </section>
 
       <AboutSection />
+      <TeamSection />
       <Footer />
     </>
   );
