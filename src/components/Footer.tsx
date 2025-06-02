@@ -1,4 +1,3 @@
-
 import { Instagram, Facebook, Twitter } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -13,9 +12,9 @@ const Footer = () => {
           <div>
             <div className="mb-6">
               <img 
-                src="/lovable-uploads/55692579-dab4-4f05-9fb6-4dc9c0f252ec.png" 
+                src="/lovable-uploads/df74651a-4c83-495a-96a3-8e0cb74b6fa4.png" 
                 alt="Verandah Coffee Roasters & Café" 
-                className="h-16 w-auto object-contain mb-4 hover:scale-105 transition-transform duration-300"
+                className="h-20 w-auto object-contain mb-4 hover:scale-105 transition-transform duration-300"
                 style={{ filter: 'drop-shadow(0 2px 8px rgba(255,255,255,0.1))' }}
               />
             </div>
