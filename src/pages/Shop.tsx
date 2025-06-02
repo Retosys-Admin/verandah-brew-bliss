@@ -60,7 +60,7 @@ const Shop = () => {
         <div className="container-custom relative z-10">
           <div className="flex items-center space-x-6 mb-6">
             <img 
-              src="/lovable-uploads/a41b404b-8d7d-4a36-84ce-6aaa113ae89f.png" 
+              src="/lovable-uploads/55692579-dab4-4f05-9fb6-4dc9c0f252ec.png" 
               alt="Verandah Coffee Roasters & Café" 
               className="h-20 w-auto object-contain animate-fade-in"
               style={{ filter: 'drop-shadow(0 4px 12px rgba(0,0,0,0.3))' }}

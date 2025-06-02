@@ -13,7 +13,7 @@ const Footer = () => {
           <div>
             <div className="mb-6">
               <img 
-                src="/lovable-uploads/a41b404b-8d7d-4a36-84ce-6aaa113ae89f.png" 
+                src="/lovable-uploads/55692579-dab4-4f05-9fb6-4dc9c0f252ec.png" 
                 alt="Verandah Coffee Roasters & Café" 
                 className="h-16 w-auto object-contain mb-4 hover:scale-105 transition-transform duration-300"
                 style={{ filter: 'drop-shadow(0 2px 8px rgba(255,255,255,0.1))' }}

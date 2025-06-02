@@ -29,7 +29,7 @@ const LuxuryMenuPreview = () => {
         description: "Turmeric-infused latte with house-made oat milk and a touch of honey",
         price: "₹250",
         featured: true,
-        image: "https://images.unsplash.com/photo-1571115764595-644a1f56a55c?q=80&w=1974"
+        image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=1974"
       },
       {
         name: "Monsoon Malabar Espresso",
@@ -64,13 +64,13 @@ const LuxuryMenuPreview = () => {
         name: "Royal Masala Chai",
         description: "Traditional spiced tea with cardamom, cinnamon, and ginger",
         price: "₹120",
-        image: "https://images.unsplash.com/photo-1565799509-558783d638a2?q=80&w=1974"
+        image: "https://images.unsplash.com/photo-1571115764595-644a1f56a55c?q=80&w=1974"
       },
       {
         name: "Earl Grey Supreme",
         description: "Premium Ceylon tea with bergamot and cornflower petals",
         price: "₹160",
-        image: "https://images.unsplash.com/photo-1594631661960-28b2238ee5e0?q=80&w=1974"
+        image: "https://images.unsplash.com/photo-1544787219-7f47ccb76574?q=80&w=1964"
       }
     ],
     Pastries: [
@@ -84,7 +84,7 @@ const LuxuryMenuPreview = () => {
         name: "Chocolate Éclair",
         description: "Classic French pastry with vanilla cream and chocolate glaze",
         price: "₹140",
-        image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=1974"
+        image: "https://images.unsplash.com/photo-1486427944299-d1955d23e34d?q=80&w=1974"
       }
     ],
     Food: [
@@ -92,7 +92,7 @@ const LuxuryMenuPreview = () => {
         name: "Truffle Avocado Toast",
         description: "Sourdough with smashed avocado, truffle oil, and microgreens",
         price: "₹280",
-        image: "https://images.unsplash.com/photo-1603046891744-1f76eb10aec1?q=80&w=1974"
+        image: "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?q=80&w=1974"
       },
       {
         name: "Artisan Panini",

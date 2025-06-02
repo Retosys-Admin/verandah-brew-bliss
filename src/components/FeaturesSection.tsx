@@ -7,19 +7,19 @@ const FeaturesSection = () => {
       title: "Artisan Roasted",
       description: "Our beans are carefully roasted in-house to bring out their unique flavors and aromas.",
       icon: "☕",
-      image: "https://images.unsplash.com/photo-1559181567-c3190ca9959b?q=80&w=1964"
+      image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=2070"
     },
     {
       title: "Sustainable Sourcing",
       description: "We work directly with farmers to ensure fair trade and sustainable coffee practices.",
       icon: "🌱",
-      image: "https://images.unsplash.com/photo-1587734195503-904fca47e0d9?q=80&w=1964"
+      image: "https://images.unsplash.com/photo-1544787219-7f47ccb76574?q=80&w=1964"
     },
     {
       title: "Expert Baristas",
       description: "Our skilled baristas craft each cup with precision and passion for the perfect experience.",
       icon: "👨‍🍳",
-      image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=2070"
+      image: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1974"
     },
     {
       title: "Cozy Atmosphere",
