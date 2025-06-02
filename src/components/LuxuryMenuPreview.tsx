@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Star, Coffee, Leaf, Cookie, Sandwich } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const LuxuryMenuPreview = () => {
   const [activeCategory, setActiveCategory] = useState("Signature");
@@ -69,7 +70,7 @@ const LuxuryMenuPreview = () => {
         name: "Earl Grey Supreme",
         description: "Premium Ceylon tea with bergamot and cornflower petals",
         price: "₹160",
-        image: "https://images.unsplash.com/photo-1556679343-c1917e0cdb3a?q=80&w=1964"
+        image: "https://images.unsplash.com/photo-1594631661960-28b2238ee5e0?q=80&w=1974"
       }
     ],
     Pastries: [
@@ -83,7 +84,7 @@ const LuxuryMenuPreview = () => {
         name: "Chocolate Éclair",
         description: "Classic French pastry with vanilla cream and chocolate glaze",
         price: "₹140",
-        image: "https://images.unsplash.com/photo-1550617931-e17a7b70daa2?q=80&w=1974"
+        image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=1974"
       }
     ],
     Food: [
@@ -210,9 +211,11 @@ const LuxuryMenuPreview = () => {
                 Visit us to explore our complete collection of artisan beverages, 
                 seasonal specials, and chef's recommendations.
               </p>
-              <Button className="bg-white text-verandah-brown hover:bg-verandah-cream font-montserrat font-bold px-8 py-4 text-lg hover:scale-105 transition-all duration-300">
-                View Complete Menu
-              </Button>
+              <Link to="/menu">
+                <Button className="bg-white text-verandah-brown hover:bg-verandah-cream font-montserrat font-bold px-8 py-4 text-lg hover:scale-105 transition-all duration-300">
+                  View Complete Menu
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

@@ -45,10 +45,10 @@ const Navbar = () => {
         <Link to="/" className="flex items-center group">
           <div className="relative">
             <img 
-              src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?q=80&w=400&h=400&fit=crop&crop=center" 
+              src="/lovable-uploads/a41b404b-8d7d-4a36-84ce-6aaa113ae89f.png" 
               alt="Verandah Coffee Roasters & Café" 
-              className={`transition-all duration-300 group-hover:scale-105 object-contain rounded-lg ${
-                isScrolled ? "h-14 w-14" : "h-20 w-20"
+              className={`transition-all duration-300 group-hover:scale-105 object-contain ${
+                isScrolled ? "h-12 w-auto" : "h-16 w-auto"
               }`}
               style={{ filter: 'drop-shadow(0 2px 8px rgba(0,0,0,0.1))' }}
             />

@@ -1,4 +1,6 @@
+
 import { Instagram, Facebook, Twitter } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -11,9 +13,9 @@ const Footer = () => {
           <div>
             <div className="mb-6">
               <img 
-                src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?q=80&w=400&h=400&fit=crop&crop=center" 
+                src="/lovable-uploads/a41b404b-8d7d-4a36-84ce-6aaa113ae89f.png" 
                 alt="Verandah Coffee Roasters & Café" 
-                className="h-20 w-20 object-contain mb-4 hover:scale-105 transition-transform duration-300 rounded-lg"
+                className="h-16 w-auto object-contain mb-4 hover:scale-105 transition-transform duration-300"
                 style={{ filter: 'drop-shadow(0 2px 8px rgba(255,255,255,0.1))' }}
               />
             </div>
@@ -41,19 +43,16 @@ const Footer = () => {
             <h3 className="text-xl font-bold font-montserrat mb-6">Sitemap</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#about" className="text-verandah-cream/80 hover:text-verandah-terracotta transition-colors">About Us</a>
+                <Link to="/about" className="text-verandah-cream/80 hover:text-verandah-terracotta transition-colors">About Us</Link>
               </li>
               <li>
-                <a href="#menu" className="text-verandah-cream/80 hover:text-verandah-terracotta transition-colors">Menu</a>
+                <Link to="/menu" className="text-verandah-cream/80 hover:text-verandah-terracotta transition-colors">Menu</Link>
               </li>
               <li>
-                <a href="#shop" className="text-verandah-cream/80 hover:text-verandah-terracotta transition-colors">Shop Beans</a>
+                <Link to="/shop" className="text-verandah-cream/80 hover:text-verandah-terracotta transition-colors">Shop</Link>
               </li>
               <li>
-                <a href="#location" className="text-verandah-cream/80 hover:text-verandah-terracotta transition-colors">Location</a>
-              </li>
-              <li>
-                <a href="#" className="text-verandah-cream/80 hover:text-verandah-terracotta transition-colors">Blog</a>
+                <Link to="/location" className="text-verandah-cream/80 hover:text-verandah-terracotta transition-colors">Location</Link>
               </li>
             </ul>
           </div>
@@ -97,9 +96,22 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-verandah-cream/60 text-sm mb-4 md:mb-0">
-            &copy; {currentYear} Verandah Coffee Roasters & Café. All rights reserved.
-          </p>
+          <div className="text-verandah-cream/60 text-sm mb-4 md:mb-0">
+            <p className="mb-1">
+              &copy; {currentYear} Verandah Coffee Roasters & Café. All rights reserved.
+            </p>
+            <p>
+              Designed by{" "}
+              <a 
+                href="https://www.retosys.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-verandah-terracotta hover:text-verandah-cream transition-colors font-medium"
+              >
+                Retosys
+              </a>
+            </p>
+          </div>
           <div className="flex space-x-6">
             <a href="#" className="text-verandah-cream/60 hover:text-verandah-terracotta text-sm transition-colors">Privacy Policy</a>
             <a href="#" className="text-verandah-cream/60 hover:text-verandah-terracotta text-sm transition-colors">Terms of Service</a>
